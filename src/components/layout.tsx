@@ -1,15 +1,10 @@
-import { Html, Head, Main, NextScript } from "next/document"
+import React, { useState } from "react";
 
-
-
-export default  function Document()  {
+export const Layouot = () => {
+    const [headerId, setID] = useState(0);
     return (
-        <Html lang="en">
-            <Head />
-            <body>
-                <Main />
-                <NextScript />
-            </body>
-        </Html>
+        <div className="mheader">
+            <h1 className="title">This is Chatbot</h1>
+        </div>
     )
 }
